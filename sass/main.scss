@@ -1,0 +1,26 @@
+// Import des variables
+@import "./utils/variables";
+
+// Import de la base
+@import "./base/base";
+
+// Import de la typographie
+@import "./base/typography";
+
+// Import des boutons
+@import "./components/buttons";
+
+// Import du header
+@import "./layouts/header";
+
+// Import de la navigation
+@import "./layouts/nav";
+
+// Import des cartes présentes sur l'accueil
+@import "./layouts/home-card";
+
+// Import des menus
+@import "./layouts/menu";
+
+// Import du footer
+@import "./layouts/footer";

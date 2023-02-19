@@ -1,0 +1,19 @@
+{
+  "name": "oc-projet3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elabdellaouisoukaina/OC-Projet3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elabdellaouisoukaina/OC-Projet3/issues"
+  },
+  "homepage": "https://github.com/elabdellaouisoukaina/OC-Projet3#readme"
+}
