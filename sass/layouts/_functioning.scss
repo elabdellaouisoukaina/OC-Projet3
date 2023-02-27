@@ -1,0 +1,43 @@
+.instructions {
+    padding: 10% 7%;
+    &__list {
+        list-style: none;
+        counter-reset: steps;
+        padding: 0;
+        &-item {
+            // forme de l'item 
+            background-color: $main-background-color;
+            width: inherit;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            padding: 25px 20px;
+            margin: 25px 0;
+
+            // aligne le contenu de l'item à gauche
+            display: flex;
+            align-content: flex-start;
+
+            // style des puces
+            position: relative;   
+            text-align: center;            
+            counter-increment: steps;
+            &::before {
+                content: counter(steps);
+                background: $color-primary;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                color: white;
+                position: absolute;      
+                left:-10px;
+            }
+        }
+        &-icon {
+            color: grey;
+            margin: 0 15px 0 10px;
+        }
+    }
+}
+
+
+  
