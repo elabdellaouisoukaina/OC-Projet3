@@ -1,6 +1,5 @@
 // Import Google Fonts : police Shrikland regular 400 et Roboto regular 400 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&family=Shrikhand&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -10,22 +9,23 @@ h1 {
 }
 
 .location {
-    font-size: 22px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .nav {
     &__heading {
-        font-size: 28px;
+        font-size: 24px;
         font-weight: bold;
     }
     &__subtitle {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 100;
     }
 }
 
-button {
-    font-size: 20px;
+.button {
+    font-size: 16px;
 }
 
 footer {

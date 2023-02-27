@@ -3,7 +3,7 @@ header {
     text-align: center;
     flex-direction: column;
     .logo {
-        width: 40%;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         padding: 5% 0;
@@ -11,17 +11,24 @@ header {
 }
 .location {
     background-color: $location-background-color;
-    padding: 3% 30%;
+    padding: 5% 25%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .nav {
     background-color: $main-background-color;
-    padding: 7%;
-    &__subtitle {
-        margin: 5% 0;
+    padding: 5%;
+    &__heading {
+        padding: 5% 5% 0 5%;
     }
+    &__subtitle {
+        padding: 5% 0;
+    }
+}
+
+.button {
+    margin: 5% 0 10% 0;
 }
     
