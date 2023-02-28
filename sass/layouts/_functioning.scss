@@ -35,6 +35,9 @@
         &-icon {
             color: grey;
             margin: 0 15px 0 10px;
+            &--color-primary {
+                color: $color-primary;
+            }
         }
     }
 }

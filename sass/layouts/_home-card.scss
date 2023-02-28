@@ -1,0 +1,60 @@
+.restaurant {
+    padding: 10% 7%;
+    background-color: $main-background-color;
+    &-heading {
+        margin-bottom: 25px;
+    }
+    &-card {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px 0px #0000001A;
+        height: 245px;
+        margin: 25px 0;
+
+        // "Nouveau" en haut à droite de l'image
+        position: relative;
+        &__image {
+            width: 100%;
+            border-top-left-radius: 15px;    
+            border-top-right-radius: 15px;
+            height: 70%;
+            object-fit: cover;
+            &-text--top-right {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                border-radius: 5px;
+                background-color: lightgreen;
+                color: green;
+                padding: 5px 10px;
+                text-align: center;
+            }
+        }
+        &__infos {
+            height: 27%;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            & h2 {
+                margin: 0;
+            }
+            & p {
+                margin: 5px 0;
+            }
+        }
+        &__like-button {
+            // &--not-clicked {
+            //     display: none;
+            //     color: linear-gradient(to bottom right, $color-secondary, $color-primary)ed;
+            // }
+            // &:hover .fa-solid, .restaurant-card__like-button .restaurant-card__like-button--clicked {
+            //     display: none;
+            // }
+            // &:hover .restaurant-card__like-button--clicked {
+            //     display: inline;
+            // }
+        }
+    }
+}

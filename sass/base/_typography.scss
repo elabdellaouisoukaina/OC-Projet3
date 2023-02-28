@@ -5,35 +5,34 @@ body {
     font-size: 16px;
 }
 
-h1 {
-    font-family: 'Skhrikhand', sans-serif;
-}
-
+// h1 {
+//     font-family: 'Skhrikhand', sans-serif;
+// }
 
 .location {
     font-weight: bold;
 }
 
-.h1 {
+h1 {
     font-size: 24px;
     font-weight: bold;
+    margin: 0;
 }
 
-.nav {
-    &__subtitle {
-        font-size: 18px;
-        font-weight: 100;
-    }
+h2, .nav__subtitle, .restaurant-card__infos p {
+    font-size: 18px;
+}
+
+.nav__subtitle {
+    font-weight: 100;
 }
 
 .button {
     font-size: 16px;
 }
 
-.instructions {
-    &__list-item {
-        font-weight: bold; 
-    }
+.instructions__list-item {
+    font-weight: bold; 
 }
 
 footer {
