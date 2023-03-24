@@ -1,0 +1,23 @@
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+   
+.loading-spinner:before {
+    $taille-spinner: 15vw;
+    content: '';
+    position: fixed;
+    top: 50vh;
+    left: 50vw - ($taille-spinner/2);
+    width: $taille-spinner;
+    height: $taille-spinner;
+    border-radius: 50%;
+    border-top: 5px solid $color-primary;
+    border-right: 5px solid transparent;
+    animation: spinner .7s linear 5;
+    background-color: white;
+}
