@@ -49,6 +49,29 @@ header {
     }
 }
 
+// Animation : Affichage progressif du menu
+$animation-duration: 1s;
+$animation-transition: 200ms;
+.drop-in {
+    animation: drop-in $animation-duration ease $animation-transition backwards;
+}
+@for $i from 2 through 14 {
+    $animation-duration: $animation-duration + 0.5s;
+    $animation-transition: $animation-transition + 0.2s;
+
+    #{'.drop-in-'+$i} {
+        animation: drop-in $animation-duration ease $animation-transition backwards;
+    }   
+}
+@keyframes drop-in {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
 .command {
     display: flex;
     justify-content: center;
