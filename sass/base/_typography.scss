@@ -5,9 +5,15 @@ body {
     font-size: 16px;
 }
 
+footer {
+    color: white;
+}
+
 // h1 {
 //     font-family: 'Skhrikhand', sans-serif;
 // }
+
+// ============================ Pages Accueil ============================
 
 .location {
     font-weight: bold;
@@ -19,7 +25,7 @@ h1 {
     margin: 0;
 }
 
-h2, .nav__subtitle, .restaurant-card__infos p {
+h2, .nav__subtitle, .restaurant-card__infos p, h3 {
     font-size: 18px;
 }
 
@@ -35,6 +41,12 @@ h2, .nav__subtitle, .restaurant-card__infos p {
     font-weight: bold; 
 }
 
-footer {
-    color: white;
+// ============================ Pages Menus ============================
+
+.menu-title {
+    font-family: 'Shrikhand', sans-serif;
+}
+
+.plate-price {
+    font-weight: bold;
 }
