@@ -19,7 +19,8 @@
         opacity: 0;
     }
 }
-@keyframes bg-fade-in {
+
+@keyframes fade-in {
     99% {
         opacity: 1;
         z-index: 1;
@@ -30,19 +31,28 @@
     }
 }
 
+@keyframes no-scroll {
+    0% {
+        overflow-y: hidden;
+    }
+    100% {
+        overflow-y: hidden;
+    }
+}
+
 .loading-spinner {
     position: absolute;
     background-color: white;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    animation: bg-fade-in 4s 0s forwards;
+    animation: fade-in 4s 0s forwards;
     div:before {
         $taille-spinner: 15vw;
         content: '';
         position: fixed;
         top: 50vh;
-        left: 50vw - ($taille-spinner/2);
+        left: 50vw - calc($taille-spinner/2);
         width: $taille-spinner;
         height: $taille-spinner;
         border-radius: 50%;
@@ -53,3 +63,7 @@
     }
 }
 
+body {
+    // Bloque le scroll de la page le temps du loading spinner
+    animation: no-scroll 4s;
+}
