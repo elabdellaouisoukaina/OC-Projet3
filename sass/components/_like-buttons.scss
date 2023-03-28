@@ -1,0 +1,29 @@
+.like-button {
+    // Même taille que la classe .fa-lg
+    font-size: 1.25em;
+    &--liked {
+        // Couleur du coeur dégradé
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary); 
+        /* Use the txt as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+    &--not-liked{
+        background: white;
+        &:hover {
+            animation: liked 0.4s forwards;     
+        }
+    }
+}
+
+@keyframes liked {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

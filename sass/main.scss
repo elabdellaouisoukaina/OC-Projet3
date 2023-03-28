@@ -10,8 +10,12 @@
 // Import de la typographie
 @import "./base/typography";
 
-// Import des boutons
+// Import des boutons principaux
 @import "./components/buttons";
+
+// Import des boutons like
+@import "./components/like-buttons";
+
 
 // Import du header
 @import "./layouts/header";
