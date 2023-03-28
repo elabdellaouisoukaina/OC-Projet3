@@ -46,7 +46,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    animation: fade-in 4s 0s forwards;
+    animation: fade-in 3s 0s forwards;
     div:before {
         $taille-spinner: 15vw;
         content: '';
@@ -58,12 +58,12 @@
         border-radius: 50%;
         border-top: 5px solid $color-primary;
         border-right: 5px solid transparent;
-        animation: spinner 4s 0s forwards linear;
+        animation: spinner 3s 0s forwards linear;
         background-color: white;
     }
 }
 
 body {
     // Bloque le scroll de la page le temps du loading spinner
-    animation: no-scroll 4s;
+    animation: no-scroll 3s;
 }
