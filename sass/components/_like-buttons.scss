@@ -11,8 +11,7 @@
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
     }
-    &--not-liked{
-        background: white;
+    &--not-liked {
         &:hover {
             animation: liked 0.3s forwards;     
         }
