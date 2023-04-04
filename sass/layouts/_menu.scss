@@ -56,6 +56,9 @@ header {
                 background-color: green;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
+                & i {
+                    color: white;
+                }
             }
             & div {
                 padding: 5px 10px; 
@@ -87,7 +90,9 @@ header {
                     // Réduit la largeur pour que ça donne l'impression que le bloc vert pousse le texte
                     width: 80%;    
                     & + .green-bloc {
-                        display: inline-flex;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         position: absolute;
                         right: 8%;  
                         height: 61px;
