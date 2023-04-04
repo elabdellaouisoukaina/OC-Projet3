@@ -50,9 +50,9 @@ header {
             padding: 0;
             display: flex ;
             flex-direction: row;
-            justify-content: space-between;
             & .green-bloc {
                 display: none;
+                width: 10%;
                 background-color: green;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
@@ -61,39 +61,52 @@ header {
                 padding: 5px 10px; 
             }
             & .dish {
-                width: 100%;
+                width: 95%;
+                height: 61px;
+                display: flex;
+                justify-content: space-around;
                 & .dish-info {
                     display: flex ;
-                    flex-direction: column;             
+                    flex-direction: column;
+                    width: 75%;
+                    & p, h3 {
+                        // Ajoute les ... quand le texte est trop long
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }      
                 } 
                 & .dish-price {
                     display: flex;
                     align-items: flex-end;
+                    justify-content: flex-end;
                     font-weight: bold;
+                    width: 15%;
                 }
-                &:hover + .green-bloc {
-                    display: inline-flex;
+                &:hover {
+                    // Réduit la largeur pour que ça donne l'impression que le bloc vert pousse le texte
+                    width: 80%;    
+                    & + .green-bloc {
+                        display: inline-flex;
+                        position: absolute;
+                        right: 8%;  
+                        height: 61px;
+                    }    
                 }  
-            }
-            
+            }   
         }
     }
-}
-
-
-      
-.dish-info:hover + .green-bloc {
-    // display: block;
 }
 
 // Animation : Affichage progressif du menu
 $animation-duration: 1s;
 $animation-transition: 200ms;
+$nb-max-items: 14;
 .drop-in {
     animation: drop-in $animation-duration ease $animation-transition backwards;
 }
 
-@for $i from 2 through 14 {
+@for $i from 2 through $nb-max-items {
     $animation-duration: $animation-duration + 0.5s;
     $animation-transition: $animation-transition + 0.2s;
 
