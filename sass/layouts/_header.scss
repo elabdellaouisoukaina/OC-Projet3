@@ -9,8 +9,9 @@ header {
         padding: 20px 0;
     }
 }
+
 .location {
-    background-color: $location-background-color;
+    background: linear-gradient(to bottom, #d5d5d5, $location-background-color 10%);    
     padding: 20px;
     display: flex;
     flex-direction: row;
