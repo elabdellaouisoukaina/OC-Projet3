@@ -3,7 +3,7 @@ footer {
     padding: 7%;
     .logo {
         filter: invert(100%);
-        width: 35%;
+        height: 20px;
     }
 
     // RESPONSIVE : desktop
@@ -12,18 +12,30 @@ footer {
         flex-direction: row-reverse;
         align-items: center;
         justify-content: flex-start;
-        height: 120px;
         padding: 0 100px;
+        height: 120px;
+
         .logo {
-            height: 20px;
-            width: fit-content;
             margin-left: 100px;
         }
     }
 
     // RESPONSIVE : tablette
     @media (max-width: 991px) and (min-width: 768px){
+        height: 50px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 
+    // RESPONSIVE : dektop et tablette
+    @media (min-width: 768px) {
+        .logo {
+            width: fit-content;
+        }
     }
 }
 
