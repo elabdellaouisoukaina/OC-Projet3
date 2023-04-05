@@ -48,16 +48,15 @@ header {
     & ul {
         display: flex;
         flex-direction: column;
-        // align-items: center;
-        margin: 0 5%;
+        padding: 0;
         width: 100%;
+
         & div {
             display: flex;
             justify-content: space-between;
         }
         & li {
             background-color: white;
-            width: 90%;
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             margin: 5px 0;
@@ -102,7 +101,7 @@ header {
                 }
                 &:hover {
                     // Réduit la largeur pour que ça donne l'impression que le bloc vert pousse le texte
-                    width: 80%;    
+                    width: 87%;    
                     & + .green-bloc {
                         display: flex;
                         justify-content: center;
@@ -120,42 +119,49 @@ header {
     }
 
     // RESPONSIVE : desktop
-    // @media (min-width: 992px) {
-    //     margin: 0 240px;
-    //     width: auto;
-    //     padding: 0 120px;
-    //     ul li {
-    //         & .dish:hover {
-    //             // Réduit la largeur pour que ça donne l'impression que le bloc vert pousse le texte
-    //             width: 90%;    
-    //             & + .green-bloc {
-    //                 right: 240px  
-    //             }    
-    //         }  
-    //     }
-    // }
-
-    // RESPONSIVE : tablette
-    @media (max-width: 991px) and (min-width: 768px){
-        margin: 0 100px;
+    @media (min-width: 992px) {
+        margin: 0 120px;
         width: auto;
-        padding: 0 50px;
+        padding: 0 120px;
         ul li {
-            display: flex;
             & .dish:hover {
                 // Réduit la largeur pour que ça donne l'impression que le bloc vert pousse le texte
-                width: 80%;    
                 & + .green-bloc {
-                    right: 180px  
+                    right: 240px  
                 }    
             }  
         }
     }
-    @media (max-width: 870px) and (min-width: 768px){
-        ul li .dish:hover  + .green-bloc {
-            right: 170px;
+
+    // RESPONSIVE : tablette
+    @media (max-width: 991px) and (min-width: 768px) {
+        margin: 0 50px;
+        width: auto;
+        padding: 0 50px;
+        ul li {
+            & .dish:hover {
+                // Réduit la largeur pour que ça donne l'impression que le bloc vert pousse le texte
+                & + .green-bloc {
+                    right: 100px  
+                }    
+            }  
         }
     }
+
+    // // RESPONSIVE : tablette
+    // @media (max-width: 991px) and (min-width: 768px){
+    //     margin: 0 50px;
+    //     width: auto;
+    //     padding: 0 50px;
+    //     ul li {
+    //         & .dish:hover {
+    //             // Réduit la largeur pour que ça donne l'impression que le bloc vert pousse le texte
+    //             & + .green-bloc {
+    //                 right: 100px  
+    //             }    
+    //         }  
+    //     }
+    // }
 
     // RESPONSIVE : desktop et tablette
     @media (min-width: 768px) {
