@@ -8,9 +8,14 @@
         padding: 40px 120px;
     }
 
+    // RESPONSIVE : tablette
+    @media (max-width: 991px) and (min-width: 768px){
+        padding: 40px 100px;
+    }
+
     & > div {
-        // RESPONSIVE : desktop
-        @media (min-width: 992px) {
+        // RESPONSIVE : desktop et tablette
+        @media (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -71,6 +76,13 @@
             width: 40%;
             height: 280px;
         }
+
+        // RESPONSIVE : tablette
+        @media (max-width: 991px) and (min-width: 768px){
+            width: 45%;
+            height: 280px;
+        }
+
     }
 }
 

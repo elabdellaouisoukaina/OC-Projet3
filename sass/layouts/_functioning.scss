@@ -1,19 +1,28 @@
 .instructions {
     padding: 40px 5%;
+
+    // RESPONSIVE : desktop
     @media (min-width: 992px) {
         padding: 40px 120px;
     }
+
+    // RESPONSIVE : tablette
+    @media (max-width: 991px) and (min-width: 768px){
+        padding: 40px 100px;
+    }
+
     &__list {
         list-style: none;
         counter-reset: steps;
         padding: 0;
 
-        // RESPONSIVE : desktop
-        @media (min-width: 992px) {
+        // RESPONSIVE : desktop et tablette
+        @media (min-width: 768px) {
             display: flex;
             flex-direction: row; 
             justify-content: space-between;
         }
+
         &-item {
             // forme de l'item 
             background-color: $main-background-color;
@@ -26,6 +35,7 @@
             // aligne le contenu de l'item à gauche
             display: flex;
             align-content: flex-start;
+            align-items: center;
 
             // style des puces
             position: relative;   
@@ -42,9 +52,14 @@
                 left:-10px;
             }
 
-            // RESPONSIVE : desktop
-            @media (min-width: 992px) {
+            // RESPONSIVE : desktop (même affichage sur tablette mais ajustement pour pas que les items se touchent)
+            @media (min-width: 1550px) {
                 width: 29%;
+            }
+
+            // RESPONSIVE : tablette
+            @media (max-width: 1549px) and (min-width: 768px){
+                width: 24%;
             }
         }
         &-icon {
