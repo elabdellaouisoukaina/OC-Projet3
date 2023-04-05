@@ -20,17 +20,18 @@ header {
 
 .nav {
     background-color: $main-background-color;
-    padding: 5%;
+    padding: 20px;
+    height: 190px;
     &__heading {
-        padding: 5% 10% 0 10%;
+        padding: 15px 35px;
     }
     &__subtitle {
-        padding: 5% 0;
+        padding: 15px 0;
     }
 }
 
 .button {
-    margin: 5% 0 10% 0;
+    margin: 15px 35px;
 }
     
 .header-menu {

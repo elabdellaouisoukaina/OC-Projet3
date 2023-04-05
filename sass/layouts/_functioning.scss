@@ -1,9 +1,19 @@
 .instructions {
-    padding: 10% 7%;
+    padding: 40px 5%;
+    @media (min-width: 992px) {
+        padding: 40px 120px;
+    }
     &__list {
         list-style: none;
         counter-reset: steps;
         padding: 0;
+
+        // RESPONSIVE : desktop
+        @media (min-width: 992px) {
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between;
+        }
         &-item {
             // forme de l'item 
             background-color: $main-background-color;
@@ -30,6 +40,11 @@
                 color: white;
                 position: absolute;      
                 left:-10px;
+            }
+
+            // RESPONSIVE : desktop
+            @media (min-width: 992px) {
+                width: 29%;
             }
         }
         &-icon {
