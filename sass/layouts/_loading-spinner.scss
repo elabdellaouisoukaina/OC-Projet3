@@ -58,12 +58,12 @@
         border-radius: 50%;
         border-top: 5px solid $color-primary;
         border-right: 5px solid transparent;
-        animation: spinner 3s 0s forwards linear;
+        animation: spinner 2s 0s forwards linear;
         background-color: white;
     }
 }
 
 body {
     // Bloque le scroll de la page le temps du loading spinner
-    animation: no-scroll 3s;
+    animation: no-scroll 2s;
 }
