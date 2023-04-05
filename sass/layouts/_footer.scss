@@ -5,6 +5,26 @@ footer {
         filter: invert(100%);
         width: 35%;
     }
+
+    // RESPONSIVE : desktop
+    @media (min-width: 992px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        height: 120px;
+        padding: 0 100px;
+        .logo {
+            height: 20px;
+            width: fit-content;
+            margin-left: 100px;
+        }
+    }
+
+    // RESPONSIVE : tablette
+    @media (max-width: 991px) and (min-width: 768px){
+
+    }
 }
 
 ul {
@@ -15,7 +35,18 @@ ul {
         a {
             text-decoration: none;
             color: white;
-        }   
+        } 
+        
+        // RESPONSIVE : desktop
+        @media (min-width: 992px) {
+            padding: 10px;
+        }
+    }
+
+    // RESPONSIVE : desktop
+    @media (min-width: 992px) {
+        display: flex;
+        flex-direction: row;
     }
 }
 
