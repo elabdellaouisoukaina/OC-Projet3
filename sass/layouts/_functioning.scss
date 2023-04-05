@@ -1,5 +1,10 @@
 .instructions {
-    padding: 40px 5%;
+    padding: 40px;
+
+    // RESPONSIVE : petit mobile
+    @media (max-width: 350px) {
+        padding: 60px 40px;
+    }
 
     // RESPONSIVE : desktop
     @media (min-width: 992px) {

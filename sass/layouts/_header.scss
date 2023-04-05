@@ -21,7 +21,10 @@ header {
 .nav {
     background-color: $main-background-color;
     padding: 20px;
-    height: 190px;
+    // RESPONSIVE : desktop et tablette
+    @media (min-width: 768px) {
+        height: 190px;
+    }
     &__heading {
         padding: 15px 35px;
     }

@@ -148,21 +148,6 @@ header {
         }
     }
 
-    // // RESPONSIVE : tablette
-    // @media (max-width: 991px) and (min-width: 768px){
-    //     margin: 0 50px;
-    //     width: auto;
-    //     padding: 0 50px;
-    //     ul li {
-    //         & .dish:hover {
-    //             // Réduit la largeur pour que ça donne l'impression que le bloc vert pousse le texte
-    //             & + .green-bloc {
-    //                 right: 100px  
-    //             }    
-    //         }  
-    //     }
-    // }
-
     // RESPONSIVE : desktop et tablette
     @media (min-width: 768px) {
         &__heading {
@@ -173,7 +158,6 @@ header {
         }
         ul li {
             & .green-bloc { 
-                display: none;
                 width: 40px;
             }
         }
