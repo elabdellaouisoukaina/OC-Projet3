@@ -53,7 +53,7 @@ header {
             & .green-bloc {
                 display: none;
                 width: 10%;
-                background-color: green;
+                background-color: $color-tertiary;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
                 & i {
@@ -96,10 +96,22 @@ header {
                         position: absolute;
                         right: 8%;  
                         height: 61px;
+                        & i {
+                            animation: check 0.4s;
+                        }
                     }    
                 }  
             }   
         }
+    }
+}
+
+@keyframes check {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 
