@@ -4,6 +4,8 @@ header {
 .header-menu__img {
     //image passe derrière menu
     z-index: -1;
+    max-height: 400px;
+    object-fit: cover;
 }
 
 .menu {
@@ -114,6 +116,60 @@ header {
                     }    
                 }  
             }   
+        }
+    }
+
+    // RESPONSIVE : desktop
+    // @media (min-width: 992px) {
+    //     margin: 0 240px;
+    //     width: auto;
+    //     padding: 0 120px;
+    //     ul li {
+    //         & .dish:hover {
+    //             // Réduit la largeur pour que ça donne l'impression que le bloc vert pousse le texte
+    //             width: 90%;    
+    //             & + .green-bloc {
+    //                 right: 240px  
+    //             }    
+    //         }  
+    //     }
+    // }
+
+    // RESPONSIVE : tablette
+    @media (max-width: 991px) and (min-width: 768px){
+        margin: 0 100px;
+        width: auto;
+        padding: 0 50px;
+        ul li {
+            display: flex;
+            & .dish:hover {
+                // Réduit la largeur pour que ça donne l'impression que le bloc vert pousse le texte
+                width: 80%;    
+                & + .green-bloc {
+                    right: 180px  
+                }    
+            }  
+        }
+    }
+    @media (max-width: 870px) and (min-width: 768px){
+        ul li .dish:hover  + .green-bloc {
+            right: 170px;
+        }
+    }
+
+    // RESPONSIVE : desktop et tablette
+    @media (min-width: 768px) {
+        &__heading {
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul li {
+            & .green-bloc { 
+                display: none;
+                width: 40px;
+            }
         }
     }
 }

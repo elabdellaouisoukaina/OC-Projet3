@@ -23,6 +23,7 @@ footer {
     // RESPONSIVE : tablette
     @media (max-width: 991px) and (min-width: 768px){
         height: 50px;
+        padding: 40px 100px;
         ul {
             display: flex;
             flex-direction: row;
