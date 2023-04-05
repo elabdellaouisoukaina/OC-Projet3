@@ -22,15 +22,19 @@ header {
         &-title {
             padding: 20px;
         }
-        & div .like-button--not-liked {
-            background: $main-background-color;
+        & div {
+            padding-right: 20px;
+            & .like-button--not-liked {
+                background: $main-background-color;
+                padding-right: 20px;
+            }
         }
     }
     &-div-h2 {
         margin: 0;
         & h2 {
             margin-left: 5%;
-            width: fit-content;
+            width: 40px;
             font-weight: 300;
             border-bottom: 3px solid $color-tertiary;
         }
