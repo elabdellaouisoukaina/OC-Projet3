@@ -48,11 +48,11 @@
     z-index: 1;
     animation: fade-in 3s 0s forwards;
     div:before {
-        $taille-spinner: 15vw;
+        $taille-spinner: 50px;
         content: '';
         position: fixed;
-        top: 50vh;
-        left: 50vw - calc($taille-spinner/2);
+        top: calc(50vh - calc($taille-spinner/2));
+        left: calc(50vw - calc($taille-spinner/2));
         width: $taille-spinner;
         height: $taille-spinner;
         border-radius: 50%;
