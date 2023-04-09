@@ -1,5 +1,6 @@
 // Import Google Fonts : police Shrikland regular 400 et Roboto regular 400 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&family=Shrikhand&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -9,10 +10,6 @@ footer {
     color: white;
 }
 
-.menu__heading-title {
-    font-family: 'Shrikhand', sans-serif;
-}
-
 // ============================ Pages Accueil ============================
 
 .location {
@@ -20,7 +17,6 @@ footer {
 }
 
 h1 {
-    font-size: 29px;
     font-weight: bold;
     margin: 0;
 }
@@ -43,6 +39,8 @@ h2, .nav__subtitle, .restaurant-card__infos p, h3 {
 
 // ============================ Pages Menus ============================
 
-.menu-title {
+.menu__heading-title {
     font-family: 'Shrikhand', sans-serif;
+    font-size: 29px;
+    margin-right: 10px;
 }

@@ -1,24 +1,24 @@
 header {
     max-height: 400px;
 }
-
+  
 .header-menu__img {
     //image passe derrière menu
     z-index: -1;
     max-height: 400px;
     object-fit: cover;
 }
-
+  
 .menu {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     width: auto;
     background-color: $main-background-color;
-
+  
     // menu passe par dessus image
     margin-top: -50px;
     padding: 40px;
-
+  
     &__heading {
         display: flex;
         flex-direction: row;
@@ -28,7 +28,7 @@ header {
             background: $main-background-color;
         }
     }
-
+  
     &-div-h2 {
         margin: 0;
         & h2 {
@@ -37,22 +37,22 @@ header {
             border-bottom: 3px solid $color-tertiary;
         }
     }
-    
+  
     & h3 {
         margin: 5px 0;
     }
-
+  
     & ul {
         display: flex;
         flex-direction: column;
         padding: 0;
         width: 100%;
-
+    
         & div {
             display: flex;
             justify-content: space-between;
         }
-        
+    
         & li {
             width: 100%;
             background-color: white;
@@ -60,28 +60,32 @@ header {
             border-radius: 20px;
             margin: 5px 0;
             padding: 0;
-            display: flex ;
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
             overflow: hidden;
+
             & .green-bloc {
-                width: 0%;
+                width: 0;
                 background-color: $color-tertiary;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
+
                 & i {
                     opacity: 0;
                     color: white;
                 }
             }
+
             & .dish {
                 width: 100%;
                 height: 71px;
                 display: flex;
                 justify-content: space-between !important;
+
                 &-info {
                     padding: 10px 0 10px 20px;
-                    display: flex ;
+                    display: flex;
                     flex-direction: column;
                     width: 75%;
                     & p {
@@ -89,16 +93,18 @@ header {
                         text-overflow: ellipsis;
                         overflow: hidden;
                         white-space: nowrap;
-                    }      
-                } 
+                    }
+                }
+
                 & .dish-price {
-                    padding: 10px 20px;
+                    padding: 10px 20px 10px 0px;
                     display: flex;
                     align-items: flex-end;
                     justify-content: flex-end;
                     font-weight: bold;
-                }  
-            }  
+                }
+            }
+
             &:hover {  
                 .dish  {
                     width: 90%;
@@ -114,37 +120,42 @@ header {
                     & i {
                         animation: check 0.4s forwards;
                     }
-                }    
-            } 
+                }
+            }
         }
-    }
-
+    }        
     // RESPONSIVE : petit mobile
     @media (max-width: 450px) {
-        ul li .dish{
-            h3 {
-                // Ajoute les ... quand le texte est trop long
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
+        ul li {
+            .dish {
+                &-info h3 {
+                    // Ajoute les ... quand le texte est trop long
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+            :hover .green-bloc {
+                width: 5%;
+                min-width: 24px;
             }
         }
     }
-
+  
     // RESPONSIVE : desktop
     @media (min-width: 992px) {
         margin: 0 120px;
         width: auto;
         padding: 0 120px;
     }
-
+  
     // RESPONSIVE : tablette
     @media (max-width: 991px) and (min-width: 768px) {
         margin: 0 50px;
         width: auto;
         padding: 0 50px;
     }
-
+  
     // RESPONSIVE : desktop et tablette
     @media (min-width: 768px) {
         &__heading {
@@ -155,7 +166,7 @@ header {
         }
     }
 }
-
+  
 @keyframes check {
     0% {
         transform: rotate(90deg);
@@ -168,7 +179,7 @@ header {
         opacity: 1;
     }
 }
-
+  
 // Animation : Affichage progressif du menu
 $animation-duration: 1s;
 $animation-transition: 200ms;
@@ -176,26 +187,31 @@ $nb-max-items: 14;
 .drop-in {
     animation: drop-in $animation-duration ease $animation-transition backwards;
 }
-
+  
 @for $i from 2 through $nb-max-items {
     $animation-duration: $animation-duration + 0.5s;
     $animation-transition: $animation-transition + 0.2s;
-
-    #{'.drop-in-'+$i} {
+  
+    #{".drop-in-" + $i} {
         animation: drop-in $animation-duration ease $animation-transition backwards;
-    }   
+    }
 }
-
+  
 @keyframes drop-in {
     from {
-        opacity:0;
+        opacity: 0;
     }
     to {
-        opacity:1;
+        opacity: 1;
     }
 }
-
+  
 .command {
     display: flex;
     justify-content: center;
+    
+    // RESPONSIVE : desktop et tablette
+    @media (min-width: 768px) {
+        padding-bottom: 31px;
+    }
 }

@@ -63,7 +63,7 @@
     }
 }
 
-body {
+#body-no-scroll {
     // Bloque le scroll de la page le temps du loading spinner
     animation: no-scroll 3s;
 }
